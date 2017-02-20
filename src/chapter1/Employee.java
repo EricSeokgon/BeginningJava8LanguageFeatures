@@ -9,7 +9,7 @@ package chapter1;
  * Note:
  * To change this template use File | Settings | File Templates.
  */
-public class Employee {
+public abstract class Employee {
     public void setSalary(double salary) {
         System.out.println("Employee.setSalary(): "+salary);
     }

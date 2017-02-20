@@ -10,7 +10,8 @@ package chapter1;
  * To change this template use File | Settings | File Templates.
  */
 public class Manager extends Employee {
-    public void setSalary(int salary) {
+    @Override
+    public void setSalary(double salary) {
         System.out.println("Manager.setSalary(): " + salary);
     }
 }
