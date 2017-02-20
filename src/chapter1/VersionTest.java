@@ -11,5 +11,8 @@ package chapter1;
  */
 @Version(major = 1, minor = 0)
 public class VersionTest {
-
+    //Annotation for instance variable xyz
+    @Version(major = 1, minor = 1)
+    private int xyz = 110;
 }
+
