@@ -9,5 +9,6 @@ package chapter1;
  * Note:
  * To change this template use File | Settings | File Templates.
  */
-public @interface BasicVersion {
+public interface BasicVersion {
+
 }
