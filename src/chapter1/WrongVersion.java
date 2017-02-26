@@ -10,6 +10,8 @@ package chapter1;
  * To change this template use File | Settings | File Templates.
  */
 public @interface WrongVersion {
+    // Cannot have parameters
+    //String concatenate(int major, int minor);
     //int major() throws Exception; // Cannot have a throws clause
     int minor(); // OK
 }
