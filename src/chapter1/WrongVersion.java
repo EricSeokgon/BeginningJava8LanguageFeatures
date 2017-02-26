@@ -9,6 +9,7 @@ package chapter1;
  * Note:
  * To change this template use File | Settings | File Templates.
  */
-public @interface WrongVersion extends BasicVersion {
-    int extended();
+public @interface WrongVersion {
+    //int major() throws Exception; // Cannot have a throws clause
+    int minor(); // OK
 }
