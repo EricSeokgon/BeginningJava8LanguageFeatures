@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.annotation;
 
 import java.lang.annotation.Annotation;
 

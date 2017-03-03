@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.annotation;
 
 /**
  * Project: BeginningJava8LanguageFeatures

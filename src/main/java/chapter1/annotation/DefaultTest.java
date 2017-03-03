@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.annotation;
 
 /**
  * Created by hadeslee on 2017-02-26.
