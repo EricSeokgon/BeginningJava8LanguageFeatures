@@ -17,5 +17,4 @@ public class DefaultException extends java.lang.Throwable {
     public DefaultException(String msg) {
         super(msg);
     }
-
 }

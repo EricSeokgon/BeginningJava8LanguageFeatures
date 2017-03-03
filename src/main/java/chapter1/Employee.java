@@ -11,6 +11,6 @@ package chapter1;
  */
 public abstract class Employee {
     public void setSalary(double salary) {
-        System.out.println("Employee.setSalary(): "+salary);
+        System.out.println("Employee.setSalary(): " + salary);
     }
 }
