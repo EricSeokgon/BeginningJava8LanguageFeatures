@@ -1,5 +1,7 @@
 package chapter1.annotation;
 
+import java.io.IOException;
+
 /**
  * Project: BeginningJava8LanguageFeatures
  * FileName: PolicyTestCases
@@ -10,5 +12,16 @@ package chapter1.annotation;
  * To change this template use File | Settings | File Templates.
  */
 public class PolicyTestCases {
-    // Must throw IOException
+    // Must throw IOExceptionn
+    @TestCase(willThrow = IOException.class)
+    public static void testCase1() {
+        // Code goes here
+    }
+
+    // We are not expecting any exception
+    @TestCase()
+    public static void testCase2() {
+// Code goes here
+    }
 }
+
