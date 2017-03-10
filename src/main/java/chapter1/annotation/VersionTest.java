@@ -11,34 +11,16 @@ package chapter1.annotation;
  */
 @Version(major = 1, minor = 0)
 public class VersionTest {
-    //Annotation for instance variable xyz
-    @Version(major = 1, minor = 1)
-    private int xyz = 110;
-
-    // Annotation for constructor VersionTest()
+    // OK. A constructor declaration
     @Version(major = 1, minor = 0)
     public VersionTest() {
+        // Code goes here
     }
 
-    // Annotation for constructor VersionTest(int xyz)
+    // OK. A method declaration
     @Version(major = 1, minor = 1)
-    public VersionTest(int xyz) {
-        this.xyz = xyz;
-    }
-
-    // Annotation for the printData() method
-    @Version(major = 1, minor = 0)
-    public void printData() {
-    }
-
-    // Annotation for the setXyz() method
-    @Version(major = 1, minor = 1)
-    public void setXyz(int xyz) {
-
-        // Annotation for local variable newValue
-        @Version(major = 1, minor = 2)
-        int newValue = xyz;
-        this.xyz = xyz;
+    public void doSomething() {
+        // Code goes here
     }
 }
 
