@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="BeginningJava8LanguageFeatures" target="1.5" />
+      <module name="BeginningJava8LanguageFeatures" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
