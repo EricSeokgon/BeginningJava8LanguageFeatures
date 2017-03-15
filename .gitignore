@@ -4,3 +4,5 @@
 out/
 src/main/resources/
 target/
+/target/
+/out/
