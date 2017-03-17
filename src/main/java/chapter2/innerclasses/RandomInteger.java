@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2.innerclasses;
 
 import java.util.Random;
 

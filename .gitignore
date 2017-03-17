@@ -2,7 +2,4 @@
 .gitignore
 .idea/workspace.xml
 out/
-src/main/resources/
 target/
-/target/
-/out/
