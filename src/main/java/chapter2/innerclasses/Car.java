@@ -15,6 +15,9 @@ public class Car {
     public class Tire {
         private double radius;
 
+        public Tire(double v) {
+        }
+
         public double getRadius() {
             return radius;
         }
