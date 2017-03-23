@@ -20,7 +20,6 @@ public class TopLevelOuter {
 
             public class InnerLevelThere {
                 private int v4 = 400;
-
             }
         }
     }
