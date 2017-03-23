@@ -10,5 +10,6 @@ public class QualifiedThisTest {
         qt.printValue();
         System.out.println("\nprintHiddenValue():");
         qt.printHiddenValue();
+
     }
 }
