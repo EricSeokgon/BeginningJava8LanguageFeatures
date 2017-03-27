@@ -11,7 +11,7 @@ package chapter2.innerclasses;
  */
 public class AccessingLocalVariables {
     public static void main(String... args) {
-        int x = 100;
+        final int x = 100;
         final int y = 200;
         class LocalInner {
             void print() {
