@@ -35,5 +35,15 @@ public class Person implements Cloneable, Serializable{
         this.name = name;
     }
 
-
+    public Object clone() {
+        try {
+            return super.clone();
+        }
+        catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+    }
+    public String toString() {
+        return "Person: id=" + this.id + ", name=" + this.name;
+    }
 }
