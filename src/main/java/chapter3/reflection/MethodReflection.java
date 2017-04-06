@@ -15,34 +15,33 @@ import java.util.ArrayList;
 public class MethodReflection {
     public static void main(String[] args) {
         Class<Person> c = Person.class;
-
-        //Get the declared methods
+        // Get the declared methods
         ArrayList<String> methodsDesciption = getDeclaredMethodsList(c);
         System.out.println("Declared Methods for " + c.getName());
         for (String desc : methodsDesciption) {
             System.out.println(desc);
         }
 
-        methodsDesciption = getMethodsList(c);
+/*        methodsDesciption = getMethodsList(c);
         System.out.println("\nMethods for" + c.getName());
         for (String desc : methodsDesciption) {
             System.out.println(desc);
-        }
+        }*/
     }
 
     public static ArrayList<String> getMethodsList(Class c) {
         Method[] methods = c.getMethods();
-        ArrayList<String> methodsList = getMethodsList(methods);
+        ArrayList<String> methodsList = getMethodsDesciption(methods);
         return methodsList;
     }
 
     public static ArrayList<String> getDeclaredMethodsList(Class c) {
         Method[] methods = c.getDeclaredMethods();
-        ArrayList<String> methodsList = getMethodsList(methods);
+        ArrayList<String> methodsList = getMethodsDesciption(methods);
         return methodsList;
     }
 
-    public static ArrayList<String> getmethodsDesciption(Method[] methods) {
+    public static ArrayList<String> getMethodsDesciption(Method[] methods) {
         ArrayList<String> methodList = new ArrayList<>();
         for (Method m : methods) {
             String modifiers = ExecutableUtil.getModifiers(m);
