@@ -15,10 +15,7 @@ public class lambda_expression_exam {
         return x + y;
     }
 
-
     public static void main(String[] args) {
         sum(1, 2);
-
-
     }
 }
