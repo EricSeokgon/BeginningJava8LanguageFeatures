@@ -21,15 +21,15 @@ public class ClassReflection {
 
     public static String getClassDescription(Class c) {
         StringBuilder classDesc = new StringBuilder();
-// Prepare the modifiers and construct keyword (class, enum, interface etc.)
+        // Prepare the modifiers and construct keyword (class, enum, interface etc.)
         int modifierBits = 0;
         String keyword = "";
-// Add keyword @interface, interface or class
+        // Add keyword @interface, interface or class
         if (c.isPrimitive()) {
-// We do not want to add anything
+        // We do not want to add anything
         } else if (c.isInterface()) {
             modifierBits = c.getModifiers() & Modifier.interfaceModifiers();
-// AN annotation is an interface
+            // AN annotation is an interface
             if (c.isAnnotation()) {
                 keyword = "@interface";
             } else {
@@ -42,19 +42,19 @@ public class ClassReflection {
             modifierBits = c.getModifiers() & Modifier.classModifiers();
             keyword = "class";
         }
-// Convert modifiers to their string represenation
+        // Convert modifiers to their string represenation
         String modifiers = Modifier.toString(modifierBits);
-// Append modifiers
+        // Append modifiers
         classDesc.append(modifiers);
-// Append the construct keyword
+        // Append the construct keyword
         classDesc.append(" " + keyword);
-// Append simple name
+        // Append simple name
         String simpleName = c.getSimpleName();
         classDesc.append(" " + simpleName);
-// Append generic parameters
+        // Append generic parameters
         String genericParms = getGenericTypeParams(c);
         classDesc.append(genericParms);
-// Append super class
+        // Append super class
         Class superClass = c.getSuperclass();
         if (superClass != null) {
             String superClassSimpleName = superClass.getSimpleName();
@@ -69,7 +69,7 @@ public class ClassReflection {
     }
 
     public static String getClassInterfaces(Class c) {
-// Get a comma-separated list of interfaces implemented by the class
+        // Get a comma-separated list of interfaces implemented by the class
         Class[] interfaces = c.getInterfaces();
         String interfacesList = null;
         if (interfaces.length > 0) {
@@ -97,5 +97,4 @@ public class ClassReflection {
         }
         return sb.toString();
     }
-
 }
