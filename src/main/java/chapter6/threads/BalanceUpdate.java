@@ -1,5 +1,4 @@
 package chapter6.threads;
-
 /**
  * Project: BeginningJava8LanguageFeatures
  * FileName: BalanceUpdate
