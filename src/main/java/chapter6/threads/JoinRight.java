@@ -20,7 +20,7 @@ public class JoinRight {
         }
     }
 
-    private static void print() {
+    public static void print() {
         for (int i = 1; i <= 5; i++) {
             System.out.println("Counter: " + i);
             try {
