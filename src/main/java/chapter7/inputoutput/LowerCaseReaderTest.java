@@ -13,7 +13,7 @@ import java.io.FileReader;
  * To change this template use File | Settings | File Templates.
  */
 public class LowerCaseReaderTest {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         String fileName = "luci4.txt";
         LowerCaseReader lcr = new LowerCaseReader(new FileReader(fileName));
         System.out.println("Reading luci4.txt using LowerCaseReader:");
