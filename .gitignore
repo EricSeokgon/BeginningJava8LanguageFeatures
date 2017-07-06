@@ -3,3 +3,12 @@
 .idea/workspace.xml
 out/
 target/
+# IntelliJ project files
+.idea
+*.iml
+luci2.txt
+mutableperson.ser
+personext.ser
+primitives.dat
+src/main/resources/
+stdout.txt
