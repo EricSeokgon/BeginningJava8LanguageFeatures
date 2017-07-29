@@ -54,7 +54,7 @@ Usually, you will not call this method here in your program.
 
     public static void printMessage(String msgHeader, WeakHashMap wmap) {
         System.out.println(msgHeader);
-// Print the size and content of map */
+        // Print the size and content of map */
         System.out.println("Size=" + wmap.size());
         System.out.println("Content=" + wmap);
         System.out.println();
