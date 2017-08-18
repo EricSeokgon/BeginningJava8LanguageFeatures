@@ -38,15 +38,13 @@ public class DequeAsQueue {
         try {
             String str = deque.getFirst();
             System.out.println("deque.getFirst(): " + str);
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             System.out.println("deque.getFirst(): Deque is empty.");
         }
         try {
             String str = deque.removeFirst();
             System.out.println("deque.removeFirst(): " + str);
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             System.out.println("deque.removeFirst(): Deque is empty.");
         }
     }
