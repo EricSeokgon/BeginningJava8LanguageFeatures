@@ -9,6 +9,10 @@ import java.util.List;
  * Created by hadeslee on 2017-09-02.
  */
 public class Person {
+    public static boolean isFemale(Person person) {
+        return false;
+    }
+
     // An enum to represent the gender of a person
     public static enum Gender {MALE, FEMALE}
     private long id;
