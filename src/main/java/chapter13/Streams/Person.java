@@ -13,6 +13,9 @@ public class Person {
         return false;
     }
 
+    public static boolean isMale(Person person) {
+    }
+
     // An enum to represent the gender of a person
     public static enum Gender {MALE, FEMALE}
     private long id;
